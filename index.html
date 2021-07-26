@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Евклид</title>
@@ -61,17 +62,25 @@
     </header>
 
     <section class="section__hero">
-      <div class="container">
-        <div class="hero__container">
-          <div class="hero__slider">
-            <div class="hero__content">
-              <h1 class="hero__heading">Проектные решения любой сложности</h1>
-              <p class="hero__dscrpt">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
-                остаются уделом проектантов</p>
-              <a href="#" class="hero__btn btn-color btn">Заказать расчёт</a>
-            </div>
+      <div class="container swiper-container">
+        <div class="hero__content">
+            <h1 class="hero__heading">Проектные решения любой сложности</h1>
+            <p class="hero__dscrpt">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
+              остаются уделом проектантов</p>
+            <a href="#" class="hero__btn btn-color btn">Заказать расчёт</a>
           </div>
+        <div class="hero__container swiper-wrapper">
+          <div class="swiper-slide slide1">
+          </div>
+          <div class="swiper-slide slide2">
+          </div>
+          <div class="swiper-slide slide3">
+          </div>
+
+
+
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -323,6 +332,8 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 
 </html>
