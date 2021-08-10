@@ -3,18 +3,19 @@ new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
-    clickable:true,
+    clickable: true,
   },
   autoheight: true,
-  spaceBetween:70,
+  spaceBetween: 70,
   slidesPerView: 1,
-  loop:true,
+  loop: true,
 
 });
 
 const burger = document.querySelector('.burger');
 burger.addEventListener('click', function () {
   document.querySelector('.burger__line').classList.toggle('active');
-  document.querySelector('.mob-nav__list').classList.toggle("animate");
+  const menu = document.querySelector('.nav');
+  menu.classList.toggle("animate");
 });
 
